@@ -1,7 +1,7 @@
 # IAM-UNet: A Hybrid State-Space and Multi-Scale Feature Fusion Network for Digital Rock Image Segmentation
 
 <p align="center">
-  <img src="architecture.jpg" alt="IAM-UNet Architecture" width="85%"/>
+  <img src="architecture.png" alt="IAM-UNet Architecture" width="85%"/>
 </p>
 
 <p align="center">

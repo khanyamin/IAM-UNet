@@ -19,7 +19,7 @@
 
 ---
 
-## 📄 Paper
+##  Paper
 
 **IAM-UNet: A Hybrid Inception-Attention-Mamba U-Net model for Rock Images Segmentation**
 
@@ -32,17 +32,17 @@ Md. Yamin Khan¹, Md Mazedur Rahman², Shams ul Hadi¹, Xibing Li¹, Linqi Huang
 
 ---
 
-## 🔍 Highlights
+##  Highlights
 
-- 🏆 **Best performance** across all 4 metrics (Dice, IoU, Precision, Recall) vs. 9 baseline models
-- 🧠 Novel **Inception–Mamba (IM) block** combining local multi-scale and global long-range feature extraction
-- 🎯 **Attention Gate** on every skip connection suppresses irrelevant grain-matrix responses
-- 🔬 Validated with **morphological analysis** (S₂, C₂, L₂, CLD) and **petrophysical simulation** (FEM + LBM)
-- 💧 Permeability relative error of only **0.22557%** — the lowest among all compared models
+-  **Best performance** across all 4 metrics (Dice, IoU, Precision, Recall) vs. 9 baseline models
+-  Novel **Inception–Mamba (IM) block** combining local multi-scale and global long-range feature extraction
+-  **Attention Gate** on every skip connection suppresses irrelevant grain-matrix responses
+-  Validated with **morphological analysis** (S₂, C₂, L₂, CLD) and **petrophysical simulation** (FEM + LBM)
+-  Permeability relative error of only **0.22557%** — the lowest among all compared models
 
 ---
 
-## 📊 Quantitative Results
+##  Quantitative Results
 
 ### Segmentation Performance (Table 1)
 
@@ -71,7 +71,7 @@ Md. Yamin Khan¹, Md Mazedur Rahman², Shams ul Hadi¹, Xibing Li¹, Linqi Huang
 
 ---
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 IAM-UNet follows a symmetric encoder–decoder U-Net topology with three core innovations:
 
@@ -113,7 +113,7 @@ Output (1×256×256)   ← binary pore mask
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 IAM-UNet/
@@ -135,7 +135,7 @@ IAM-UNet/
 
 ---
 
-## 🗂️ Dataset
+##  Dataset
 
 The dataset consists of **6 sandstone types** obtained from the [Digital Rocks Portal](https://www.digitalrocksportal.org/projects/317/):
 
@@ -184,7 +184,7 @@ pip install mamba_ssm   # CUDA required; see https://github.com/state-spaces/mam
 
 ---
 
-## 🚀 Usage
+##  Usage
 
 ### 1. Prepare Dataset
 
@@ -239,7 +239,7 @@ Computes average Dice, IoU, Precision, and Recall from saved predicted masks vs.
 
 ---
 
-## 📐 Evaluation Metrics
+##  Evaluation Metrics
 
 All metrics are computed with **pore pixels as the positive class** (masks are inverted before calculation, since pores are the minority region).
 
@@ -257,7 +257,7 @@ In addition to pixel-level metrics, the paper reports:
 
 ---
 
-## 🔬 Experimental Setup
+##  Experimental Setup
 
 | Setting | Value |
 |:---|:---|
@@ -269,7 +269,7 @@ In addition to pixel-level metrics, the paper reports:
 
 ---
 
-## 📈 Training Outputs
+##  Training Outputs
 
 After training, the following files are saved in `savemodel/`:
 
@@ -290,7 +290,7 @@ savemodel/
 
 ---
 
-## 🧪 Known Issues & Notes
+##  Known Issues & Notes
 
 > ⚠️ **Import name mismatch:** `train.py` and `test.py` import from `matrix`, but the metrics file is named `calculate_matrix.py`. Rename it or add an alias:
 > ```bash
@@ -304,7 +304,7 @@ savemodel/
 
 ---
 
-## 📚 Citation
+##  Citation
 
 If you find this work useful in your research, please consider citing:
 
@@ -320,7 +320,7 @@ If you find this work useful in your research, please consider citing:
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 This work was supported by the **Deep Earth Probe and Mineral Resources Exploration Major Project, National Science and Technology**, under Grant No. **2025ZD1010908**.
 
@@ -331,7 +331,7 @@ The Attention Gate is adapted from [Attention U-Net](https://arxiv.org/abs/1804.
 
 ---
 
-## 📬 Contact
+##  Contact
 
 **Md. Yamin Khan**  
 School of Resources and Safety Engineering  

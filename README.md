@@ -98,19 +98,6 @@ Input (1×256×256)
 Output (1×256×256)   ← binary pore mask
 ```
 
-### Key Components
-
-| Component | Description |
-|:---|:---|
-| **InceptionBlock** | 4 parallel branches (1×1, 3×3, 5×5, MaxPool+1×1) for multi-scale local feature extraction |
-| **SS2D** | Mamba-style 2D Selective State Space — scans in 4 spatial directions (H, W, and reversed) for linear-complexity global context modeling |
-| **ProposedVSSBlock** | Gated VSS: LayerNorm → depthwise conv → SS2D, modulated by a SiLU gating branch + residual |
-| **InceptionMambaBlock (IM)** | Sequential fusion of InceptionBlock and ProposedVSSBlock |
-| **Attention_block (AG)** | Generates a spatial attention map from decoder gating signal and encoder skip feature to suppress background noise |
-| **UpBlock** | Attention gate → channel reduction → bilinear upsample → concat → InceptionBlock |
-
-**Channel progression:** `1 → 64 → 128 → 256 → 512 → 1024` (bottleneck), then symmetric decoder.
-
 ---
 
 ##  Repository Structure
@@ -122,13 +109,6 @@ IAM-UNet/
 ├── test.py                 # Inference & evaluation script
 ├── calculate_matrix.py     # Evaluation metrics (Dice, IoU, Precision, Recall)
 ├── architecture.jpg        # Architecture diagram
-├── datasets/
-│   ├── train/
-│   │   ├── input/          # Training micro-CT images
-│   │   └── mask/           # Training binary masks
-│   └── test/
-│       ├── input/          # Test micro-CT images
-│       └── mask/           # Test binary masks
 └── savemodel/              # Saved weights and results (auto-created)
     └── pred/               # Predicted masks (auto-created)
 ```

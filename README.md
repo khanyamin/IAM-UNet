@@ -5,9 +5,6 @@
 </p>
 
 <p align="center">
-  <a href="https://doi.org/10.1016/j.cageo.2025.105884">
-    <img src="https://img.shields.io/badge/Journal-Computers%20%26%20Geosciences-blue" alt="Journal"/>
-  </a>
   <a href="https://www.digitalrocksportal.org/projects/317/">
     <img src="https://img.shields.io/badge/Dataset-Digital%20Rocks%20Portal-green" alt="Dataset"/>
   </a>

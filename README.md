@@ -1,4 +1,5 @@
-# IAM-UNet: A Hybrid Inception-Attention-Mamba U-Net Model for Rock Image Segmentation
+# IAM-UNet: A Hybrid State-Space and Multi-Scale Feature Fusion
+Network for Digital Rock Image Segmentation
 
 <p align="center">
   <img src="architecture.jpg" alt="IAM-UNet Architecture" width="85%"/>

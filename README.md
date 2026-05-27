@@ -109,8 +109,7 @@ IAM-UNet/
 ├── test.py                 # Inference & evaluation script
 ├── calculate_matrix.py     # Evaluation metrics (Dice, IoU, Precision, Recall)
 ├── architecture.jpg        # Architecture diagram
-└── savemodel/              # Saved weights and results (auto-created)
-    └── pred/               # Predicted masks (auto-created)
+
 ```
 
 ---

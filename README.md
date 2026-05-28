@@ -19,19 +19,6 @@
 
 ---
 
-##  Paper
-
-**IAM-UNet: A Hybrid Inception-Attention-Mamba U-Net model for Rock Images Segmentation**
-
-Md. Yamin Khan¹, Md Mazedur Rahman², Shams ul Hadi¹, Xibing Li¹, Linqi Huang¹
-
-¹ School of Resources and Safety Engineering, Central South University, Changsha, 410083 Hunan, China  
-² School of Computer Science and Technology, Beijing Institute of Technology, Beijing 100081, China
-
-📌 *Submitted to Computers & Geosciences (Elsevier)*
-
----
-
 ##  Highlights
 
 -  **Best performance** across all 4 metrics (Dice, IoU, Precision, Recall) vs. 9 baseline models

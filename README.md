@@ -203,19 +203,6 @@ savemodel/
 
 ---
 
-##  Citation
-
-If you find this work useful in your research, please consider citing:
-
-```bibtex
-@article{khan2025iamunet,
-  title   = {IAM-UNet: A Hybrid Inception-Attention-Mamba U-Net model for Rock Images Segmentation},
-  author  = {Khan, Md. Yamin and Rahman, Md Mazedur and Hadi, Shams ul and Li, Xibing and Huang, Linqi},
-  journal = {Computers \& Geosciences},
-  year    = {2025},
-  publisher = {Elsevier}
-}
-```
 
 ---
 
@@ -223,7 +210,7 @@ If you find this work useful in your research, please consider citing:
 
 This work was supported by the **Deep Earth Probe and Mineral Resources Exploration Major Project, National Science and Technology**, under Grant No. **2025ZD1010908**.
 
-The sandstone dataset is publicly available on the [Digital Rocks Portal](https://www.digitalrocksportal.org/projects/317/) (Project #317).
+The sandstone dataset is publicly available on the [Digital Rocks Portal](https://www.digitalrocksportal.org/projects/317/)
 
 ---
 

@@ -19,16 +19,8 @@
 
 ---
 
-##  Highlights
-
--  **Best performance** across all 4 metrics (Dice, IoU, Precision, Recall) vs. 9 baseline models
--  Novel **Inception–Mamba (IM) block** combining local multi-scale and global long-range feature extraction
--  **Attention Gate** on every skip connection suppresses irrelevant grain-matrix responses
--  Validated with **morphological analysis** (S₂, C₂, L₂, CLD) and **petrophysical simulation** (FEM + LBM)
--  Permeability relative error of only **0.22557%** — the lowest among all compared models
 
 ---
-
 
 ##  Repository Structure
 

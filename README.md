@@ -146,23 +146,6 @@ All metrics are computed with **pore pixels as the positive class** (masks are i
 
 ---
 
-##  Known Issues & Notes
-
-> ⚠️ **Import name mismatch:** `train.py` and `test.py` import from `matrix`, but the metrics file is named `calculate_matrix.py`. Rename it or add an alias:
-> ```bash
-> # Option 1: rename the file
-> mv calculate_matrix.py matrix.py
-> # Option 2: create a soft link / copy
-> cp calculate_matrix.py matrix.py
-> ```
-
-> ⚠️ **Mamba dependency:** `SS2D` requires `mamba_ssm` with a CUDA GPU. CPU-only environments will raise an `ImportError` at `forward_core()`.
-
----
-
-
----
-
 ##  Acknowledgments
 
 This work was supported by the **Deep Earth Probe and Mineral Resources Exploration Major Project, National Science and Technology**, under Grant No. **2025ZD1010908**.

@@ -143,24 +143,6 @@ All metrics are computed with **pore pixels as the positive class** (masks are i
 
 ---
 
-##  Training Outputs
-
-After training, the following files are saved in `savemodel/`:
-
-```
-savemodel/
-├── net.pth                      # Final model weights
-├── net_10.pth ... net_100.pth   # Epoch checkpoints (every 10 epochs)
-├── Train Loss.csv
-├── Val Loss.csv
-├── Train Dice.csv  / Val Dice.csv
-├── Train IoU.csv   / Val IoU.csv
-├── Train Precision.csv / Val Precision.csv
-├── Train Recall.csv    / Val Recall.csv
-├── test_metrics.txt             # Average test metrics
-├── test_metrics_per_image.csv   # Per-image test metrics
-└── pred/                        # Binary prediction images
-```
 
 ---
 

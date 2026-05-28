@@ -230,7 +230,7 @@ The sandstone dataset is publicly available on the [Digital Rocks Portal](https:
 ##  Contact
 
 **Md. Yamin Khan**  
-Email: [khanyamin687@gmail.com](mailto:khanyamin687@gmail.com)
+Email: [khanyamin687@gmail.com](mailto:khanyamin687@gmail.com)  
 School of Resources and Safety Engineering  
 Central South University, Changsha, 410083 Hunan, China
 

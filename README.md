@@ -95,7 +95,7 @@ Key training hyperparameters (configurable in `train.py`):
 | Batch size | 8 |
 | Epochs | 100 |
 | Input size | 256 × 256 |
-| Train/Val split | 80% / 20% |
+| Train/Val split | 8:2 |
 
 Checkpoints are saved every 10 epochs and at the end of training to `savemodel/`. Training logs (Loss, Dice, IoU, Precision, Recall) are exported as CSV files.
 

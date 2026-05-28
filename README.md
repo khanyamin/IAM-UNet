@@ -55,31 +55,8 @@ IAM-UNet/
 
 ```
 
----
 
-##  Dataset
 
-The dataset consists of **6 sandstone types** obtained from the [Digital Rocks Portal](https://www.digitalrocksportal.org/projects/317/):
-
-| Sandstone | Description |
-|:---|:---|
-| Berea | Classic benchmark sandstone |
-| Bandera Brown | Heterogeneous pore structure |
-| Bentheimer | Well-sorted, high-porosity |
-| Kirby | Complex pore geometry |
-| Leopard | Large grain size variability |
-| Parker | Fine-grained low-porosity |
-
-- **Volume size:** 1000 × 1000 × 1000 voxels at 2.25 μm resolution
-- **Connected porosity:** 14–27% (mean 20 ± 3%)
-- **Permeability:** 9–386 mD (mean 150 ± 40 mD)
-- **2D slices used:** 3250 total → **2400 train / 600 validation / 250 test**
-- **Image size:** 256 × 256 pixels (grayscale)
-- **Masks:** Black = pore, White = solid matrix
-
-> Preprocessing: Non-local means denoising applied to suppress scanner noise while preserving pore boundaries.
-
----
 
 ## ⚙️ Installation
 

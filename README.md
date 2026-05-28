@@ -225,14 +225,12 @@ This work was supported by the **Deep Earth Probe and Mineral Resources Explorat
 
 The sandstone dataset is publicly available on the [Digital Rocks Portal](https://www.digitalrocksportal.org/projects/317/) (Project #317).
 
-The SS2D module is adapted from [VMamba](https://github.com/MzeroMiko/VMamba) (Liu et al., 2024).  
-The Attention Gate is adapted from [Attention U-Net](https://arxiv.org/abs/1804.03999) (Oktay et al., 2018).
-
 ---
 
 ##  Contact
 
 **Md. Yamin Khan**  
+Email: [khanyamin687@gmail.com](mailto:khanyamin687@gmail.com)
 School of Resources and Safety Engineering  
 Central South University, Changsha, 410083 Hunan, China
 

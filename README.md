@@ -128,10 +128,6 @@ All metrics are computed with **pore pixels as the positive class** (masks are i
 | **Precision** | TP / (TP + FP) |
 | **Recall** | TP / (TP + FN) |
 
-In addition to pixel-level metrics, the paper reports:
-- **Morphological validation:** S₂(r), C₂(r), L₂(r), CLD(r), PSD
-- **Elastic properties (FEM):** Bulk modulus, Shear modulus, P-wave velocity, S-wave velocity
-- **Permeability (LBM):** Absolute permeability with relative error
 
 ---
 

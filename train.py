@@ -9,7 +9,7 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader, Dataset
 
-from net import *
+from net import InMambaAttentionUNet
 from matrix import (
     prepare_binary_mask,
     calculate_dice_coefficient,
@@ -20,7 +20,7 @@ from matrix import (
 
 warnings.filterwarnings("ignore")
 
-seed = 83
+seed = 82
 torch.manual_seed(seed)
 torch.cuda.manual_seed_all(seed)
 np.random.seed(seed)
@@ -114,7 +114,7 @@ batch_size = 8
 trainloader = DataLoader(train_data, batch_size=batch_size, shuffle=True)
 valloader = DataLoader(val_data, batch_size=batch_size, shuffle=False)
 
-net = InceptionMambaAttentionUNet().to(device)
+net = InMambaAttentionUNet().to(device)
 
 optimizer = optim.Adam(net.parameters(), lr=0.0001, betas=(0.5, 0.999))
 

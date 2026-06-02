@@ -62,7 +62,7 @@ pip install torch torchvision timm Pillow numpy
 pip install mamba_ssm   # CUDA required; see https://github.com/state-spaces/mamba
 ```
 
-> **Note:** `mamba_ssm` requires a CUDA-capable GPU. If unavailable, a custom `selective_scan` fallback can be substituted (see `net.py` import block).
+> **Note:** `mamba_ssm` requires a CUDA-capable GPU.
 
 ---
 

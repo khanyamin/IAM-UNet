@@ -165,8 +165,6 @@ Email: [khanyamin687@gmail.com](mailto:khanyamin687@gmail.com)
 School of Resources and Safety Engineering  
 Central South University, Changsha, 410083 Hunan, China
 
-For questions or collaborations, please open an issue or contact via the repository.
-
 ---
 
 <p align="center">

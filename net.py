@@ -5,7 +5,6 @@ import math
 from functools import partial
 from timm.models.layers import DropPath, trunc_normal_
 
-# Import selective scan (you may need to install mamba_ssm or use alternative)
 try:
     from mamba_ssm.ops.selective_scan_interface import selective_scan_fn
 except ImportError:
@@ -17,7 +16,7 @@ except ImportError:
         selective_scan_fn = None
 
 
-# ============== Inception Block ==============
+# Inception Block 
 class InceptionBlock(nn.Module):
     def __init__(self, in_channels, out_channels):
         super(InceptionBlock, self).__init__()
@@ -72,9 +71,9 @@ class InceptionBlock(nn.Module):
         return out
 
 
-# =========================================================
+
 # SS2D (Mamba-style)
-# =========================================================
+
 class SS2D(nn.Module):
     def __init__(
         self,
@@ -270,9 +269,9 @@ class SS2D(nn.Module):
         return out
 
 
-# =========================================================
-# Proposed VSS Block exactly matching your diagram
-# =========================================================
+
+# VSS Block
+
 class ProposedVSSBlock(nn.Module):
     def __init__(
         self,
@@ -346,7 +345,7 @@ class ProposedVSSBlock(nn.Module):
         return out
 
 
-# ============== Inception + Mamba Block ==============
+# InMamba Block
 class InceptionMambaBlock(nn.Module):
     def __init__(self, in_channels, out_channels, drop_path=0.0, d_state=16):
         super().__init__()
@@ -365,7 +364,7 @@ class InceptionMambaBlock(nn.Module):
         return x
 
 
-# ============== Attention Gate ==============
+# Attention Gate
 class Attention_block(nn.Module):
     def __init__(self, F_g, F_l, F_int):
         super(Attention_block, self).__init__()
@@ -398,7 +397,7 @@ class Attention_block(nn.Module):
         return out
 
 
-# ============== Decoder UpBlock ==============
+#Decoder UpBlock
 class UpBlock(nn.Module):
     def __init__(self, in_ch, skip_ch, out_ch):
         super(UpBlock, self).__init__()
@@ -420,8 +419,8 @@ class UpBlock(nn.Module):
         x = self.conv(x)
         return x
 
-
-class InceptionMambaAttentionUNet(nn.Module):
+# Encoder-Decoder 
+class InMambaAttentionUNet(nn.Module):
     def __init__(self, in_channels=1, num_classes=1, base_ch=64, drop_path=0.1, d_state=16):
         super(InceptionMambaAttentionUNet, self).__init__()
 

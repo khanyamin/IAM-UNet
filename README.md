@@ -93,7 +93,7 @@ Key training hyperparameters (configurable in `train.py`):
 | Parameter | Value |
 |:---|:---:|
 | Optimizer | Adam |
-| Learning rate | 1e-4 |
+| Learning rate | 0.0001 |
 | β1 / β2 | 0.5 / 0.999 |
 | Loss function | MSE |
 | Batch size | 8 |

@@ -94,11 +94,11 @@ Key training hyperparameters (configurable in `train.py`):
 |:---|:---:|
 | Optimizer | Adam |
 | Learning rate | 1e-4 |
-| Beta₁ / Beta₂ | 0.5 / 0.999 |
+| β1 / β2 | 0.5 / 0.999 |
 | Loss function | MSE |
 | Batch size | 8 |
 | Epochs | 100 |
-| Input size | 256 × 256 |
+| Input image size | 256 × 256 |
 | Train/Val split | 8:2 |
 
 Checkpoints are saved every 10 epochs and at the end of training to `savemodel/`. Training logs (Loss, Dice, IoU, Precision, Recall) are exported as CSV files.

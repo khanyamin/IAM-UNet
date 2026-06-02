@@ -15,11 +15,11 @@
 
 ---
 
-**IAM-UNet** is a hybrid encoder–decoder segmentation framework that integrates 
-the **InMamba block** — a module containing an **Inception** sub-module for 
+**IAM-UNet** is a hybrid encoder-decoder segmentation framework that integrates 
+the **InMamba block** a module containing an **Inception** sub-module for 
 multi-scale feature extraction and an **SSM** sub-module for long-range dependency 
-modeling — and **Attention-guided** skip-connection fusion that suppresses less 
-relevant information and highlights useful features across encoder–decoder paths.
+modeling and **Attention-guided** skip-connection fusion that suppresses less 
+relevant information and highlights useful features across encoder-decoder paths.
 
 ---
 

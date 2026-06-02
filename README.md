@@ -127,10 +127,10 @@ All metrics are computed with **pore pixels as the positive class** (masks are i
 
 | Metric | Formula |
 |:---|:---|
-| **Dice** | 2·TP / (2·TP + FP + FN) |
+| **Dice** | $\frac{2 \cdot TP}{2 \cdot TP + FP + FN}$ |
 | **IoU** | $\frac{TP}{TP + FP + FN}$ |
-| **Precision** | TP / (TP + FP) |
-| **Recall** | TP / (TP + FN) |
+| **Precision** | $\frac{TP}{TP + FP}$ |
+| **Recall** | $\frac{TP}{TP + FN}$ |
 
 
 ---

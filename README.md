@@ -15,7 +15,11 @@
 
 ---
 
-> **IAM-UNet** is a hybrid encoder–decoder segmentation framework that integrates **Inception multi-scale convolutions**, **Mamba-based selective state-space modeling (SS2D)**, and **Attention-guided skip-connection fusion** within a unified U-Net topology. It is designed for accurate binary pore–solid segmentation of micro-CT digital rock images, and achieves state-of-the-art performance across pixel-level, morphological, and petrophysical evaluation criteria.
+**IAM-UNet** is a hybrid encoder–decoder segmentation framework that integrates 
+the **InMamba block** — a module containing an **Inception** sub-module for 
+multi-scale feature extraction and an **SSM** sub-module for long-range dependency 
+modeling — and **Attention-guided** skip-connection fusion that suppresses less 
+relevant information and highlights useful features across encoder–decoder paths.
 
 ---
 

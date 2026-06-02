@@ -128,7 +128,7 @@ All metrics are computed with **pore pixels as the positive class** (masks are i
 | Metric | Formula |
 |:---|:---|
 | **Dice** | 2·TP / (2·TP + FP + FN) |
-| **IoU** | TP / (TP + FP + FN) |
+| **IoU** | $\frac{TP}{TP + FP + FN}$ |
 | **Precision** | TP / (TP + FP) |
 | **Recall** | TP / (TP + FN) |
 

@@ -167,7 +167,4 @@ Central South University, Changsha, 410083 Hunan, China
 
 ---
 
-<p align="center">
-  <sub>© 2025 IAM-UNet Authors. All rights reserved.</sub>
-</p>
 

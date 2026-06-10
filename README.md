@@ -22,18 +22,6 @@ relevant information and highlights useful features across encoder-decoder paths
 
 ---
 
-### Repository Structure
-
-```
-IAM-UNet/
-├── net.py                  # Full model architecture
-├── train.py                # Training script
-├── test.py                 # Inference & evaluation script
-├── calculate_matrix.py     # Evaluation metrics (Dice, IoU, Precision, Recall)
-├── architecture.jpg        # Architecture diagram
-
-```
-
 ### Requirements
 
 <ul>

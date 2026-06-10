@@ -54,7 +54,7 @@ datasets/
 ### 2. Training
 <pre><code>python train.py</code></pre>
 
-### 3. Inference & Evaluation
+### 3. Prediction
 <pre><code>python test.py</code></pre>
 
 ### 4. Metrics Calculation

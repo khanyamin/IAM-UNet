@@ -57,20 +57,17 @@ Organize data in the following structure:
 ```
 datasets/
 ├── train/
-│   ├── input/    ← grayscale micro-CT slices (.png / .jpg)
-│   └── mask/     ← binary segmentation masks (same filenames)
+│   ├── input/
+│   └── mask/
 └── test/
     ├── input/
     └── mask/
 ```
 
 ### 2. Training
+<pre><code>python train.py</code></pre>
 
-```bash
-python train.py
-```
-
-Key training hyperparameters (configurable in `train.py`):
+Key training hyperparameters:
 
 | Parameter | Value |
 |:---|:---:|
@@ -83,25 +80,11 @@ Key training hyperparameters (configurable in `train.py`):
 | Input image size | 256 × 256 |
 | Train/Val split | 8:2 |
 
-Checkpoints are saved every 10 epochs and at the end of training to `savemodel/`. Training logs (Loss, Dice, IoU, Precision, Recall) are exported as CSV files.
-
 ### 3. Inference & Evaluation
-
-```bash
-python test.py
-```
-
-Loads `savemodel/net.pth`, runs inference on the test set, saves predicted masks to `savemodel/pred/`, and writes `test_metrics.txt` and per-image CSV.
+<pre><code>python test.py</code></pre>
 
 ### 4. Standalone Metric Calculation
-
-```bash
-python calculate_matrix.py
-```
-
-Computes average Dice, IoU, Precision, and Recall from saved predicted masks vs. ground-truth masks.
-
----
+<pre><code>python calculate_matrix.py</code></pre>
 
 ##  Evaluation Metrics
 

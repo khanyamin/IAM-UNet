@@ -85,20 +85,6 @@ Key training hyperparameters:
 ### 4. Standalone Metric Calculation
 <pre><code>python calculate_matrix.py</code></pre>
 
-##  Evaluation Metrics
-
-All metrics are computed with **pore pixels as the positive class** (masks are inverted before calculation, since pores are the minority region).
-
-| Metric | Formula |
-|:---|:---|
-| **Dice** | $\frac{2TP}{2TP + FP + FN}$ |
-| **IoU** | $\frac{TP}{TP + FP + FN}$ |
-| **Precision** | $\frac{TP}{TP + FP}$ |
-| **Recall** | $\frac{TP}{TP + FN}$ |
-
-
----
-
 ##  Experimental Setup
 
 | Setting | Value |

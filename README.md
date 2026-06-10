@@ -58,7 +58,7 @@ datasets/
 <pre><code>python test.py</code></pre>
 
 ### 4. Standalone Metric Calculation
-<pre><code>python calculate_matrix.py</code></pre>
+<pre><code>python matrix.py</code></pre>
 
 ##  Acknowledgments
 

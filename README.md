@@ -52,7 +52,7 @@ torchvision
 timm
 Pillow
 numpy
-mamba_ssm        # Required for SS2D selective scan
+mamba_ssm
 ```
 
 ---

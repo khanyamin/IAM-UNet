@@ -57,7 +57,7 @@ datasets/
 ### 3. Inference & Evaluation
 <pre><code>python test.py</code></pre>
 
-### 4. Standalone Metric Calculation
+### 4. Metrics Calculation
 <pre><code>python matrix.py</code></pre>
 
 ##  Acknowledgments

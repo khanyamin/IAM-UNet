@@ -23,10 +23,7 @@ relevant information and highlights useful features across encoder-decoder paths
 
 ---
 
-
----
-
-##  Repository Structure
+## Repository Structure
 
 ```
 IAM-UNet/
@@ -37,8 +34,6 @@ IAM-UNet/
 ├── architecture.jpg        # Architecture diagram
 
 ```
-
-
 
 
 ## ⚙️ Installation
@@ -56,11 +51,11 @@ IAM-UNet/
 
 ---
 
-##  Usage
+## Usage
 
 ### 1. Prepare Dataset
 
-Organize your data in the following structure:
+Organize data in the following structure:
 
 ```
 datasets/

@@ -73,18 +73,6 @@ Key training hyperparameters:
 ### 4. Standalone Metric Calculation
 <pre><code>python calculate_matrix.py</code></pre>
 
-##  Experimental Setup
-
-| Setting | Value |
-|:---|:---|
-| GPU | NVIDIA Tesla V100-PCIE (32 GB) |
-| Framework | PyTorch |
-| Input size | 256 × 256 pixels |
-| Repeated runs | N = 5 (mean ± std) |
-| Threshold | 0.5 |
-
----
-
 ##  Acknowledgments
 
 This work was supported by the **Deep Earth Probe and Mineral Resources Exploration Major Project, National Science and Technology**, under Grant No. **2025ZD1010908**.

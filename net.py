@@ -72,8 +72,7 @@ class InceptionBlock(nn.Module):
 
 
 
-# SS2D (Mamba-style)
-
+# SS2D
 class SS2D(nn.Module):
     def __init__(
         self,

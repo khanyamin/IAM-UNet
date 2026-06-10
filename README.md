@@ -23,7 +23,7 @@ relevant information and highlights useful features across encoder-decoder paths
 
 ---
 
-## Repository Structure
+### Repository Structure
 
 ```
 IAM-UNet/
@@ -34,9 +34,6 @@ IAM-UNet/
 ├── architecture.jpg        # Architecture diagram
 
 ```
-
-
-## ⚙️ Installation
 
 ### Requirements
 

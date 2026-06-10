@@ -51,7 +51,7 @@ datasets/
     └── mask/
 ```
 
-### 2. Training
+### 2. Train the Model
 <pre><code>python train.py</code></pre>
 
 ### 3. Prediction

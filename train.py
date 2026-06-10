@@ -113,19 +113,10 @@ batch_size = 8
 
 trainloader = DataLoader(train_data, batch_size=batch_size, shuffle=True)
 valloader = DataLoader(val_data, batch_size=batch_size, shuffle=False)
-
 net = InMambaAttentionUNet().to(device)
-
 optimizer = optim.Adam(net.parameters(), lr=0.0001, betas=(0.5, 0.999))
-
-# If you want optimizer regularization, comment the line above and remove # below
-# optimizer = optim.Adam(net.parameters(), lr=0.0001, betas=(0.5, 0.999), weight_decay=1e-5)
-
 mse = nn.MSELoss()
 epochs = 100
-
-# If you want manual L2 regularization, remove # below
-# lambda_reg = 1e-5
 
 Loss_list = []
 Val_loss_list = []
@@ -158,15 +149,8 @@ for epoch in range(epochs):
         pred = net(data)
         loss = mse(pred, label)
 
-        # If you want manual L2 regularization, remove # from this block
-        # l2_reg = 0.0
-        # for param in net.parameters():
-        #     l2_reg += torch.norm(param, p=2)
-        # loss = loss + lambda_reg * l2_reg
-
         loss.backward()
         optimizer.step()
-
         train_loss += loss.item()
 
         dice, iou, precision, recall = compute_batch_metrics(pred, label, threshold=0.5)

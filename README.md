@@ -80,8 +80,8 @@ Key training hyperparameters:
 | GPU | NVIDIA Tesla V100-PCIE (32 GB) |
 | Framework | PyTorch |
 | Input size | 256 × 256 pixels |
-| Repeated runs | N = 5 (mean ± std reported) |
-| Threshold | 0.5 (sigmoid output → binary mask) |
+| Repeated runs | N = 5 (mean ± std) |
+| Threshold | 0.5 |
 
 ---
 

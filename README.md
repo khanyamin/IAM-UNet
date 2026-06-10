@@ -45,15 +45,14 @@ IAM-UNet/
 
 ### Requirements
 
-```bash
-python >= 3.8
-torch >= 1.12
-torchvision
-timm
-Pillow
-numpy
-mamba_ssm
-```
+<ul>
+<li>Python==3.9.21</li>
+<li>torch==2.6.0</li>
+<li>torchvision</li>
+<li>numpy==2.0.2
+<li>mamba-ssm==2.3.1</li>
+<li>causal-conv1d>=1.4.0</li>
+</ul>
 
 ---
 

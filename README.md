@@ -54,19 +54,6 @@ datasets/
 ### 2. Training
 <pre><code>python train.py</code></pre>
 
-Key training hyperparameters:
-
-| Parameter | Value |
-|:---|:---:|
-| Optimizer | Adam |
-| Learning rate | 0.0001 |
-| β1 / β2 | 0.5 / 0.999 |
-| Loss function | MSE |
-| Batch size | 8 |
-| Epochs | 100 |
-| Input image size | 256 × 256 |
-| Train/Val split | 8:2 |
-
 ### 3. Inference & Evaluation
 <pre><code>python test.py</code></pre>
 

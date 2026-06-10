@@ -85,9 +85,6 @@ Key training hyperparameters:
 
 ---
 
-
----
-
 ##  Acknowledgments
 
 This work was supported by the **Deep Earth Probe and Mineral Resources Exploration Major Project, National Science and Technology**, under Grant No. **2025ZD1010908**.

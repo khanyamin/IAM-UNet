@@ -1,14 +1,3 @@
-"""
-Quick test for the trained IAM-UNet model.
-
-This script:
-1. Loads one sample micro-CT image.
-2. Loads the trained IAM-UNet checkpoint.
-3. Runs model inference.
-4. Saves the predicted segmentation mask.
-5. Calculates MSE, Dice, IoU, Precision, and Recall.
-"""
-
 from pathlib import Path
 import sys
 
@@ -19,9 +8,6 @@ import torch
 import torch.nn as nn
 
 
-# ---------------------------------------------------------
-# Repository paths
-# ---------------------------------------------------------
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 
@@ -38,7 +24,7 @@ from matrix import (
 )
 
 
-CHECKPOINT_PATH = ROOT_DIR / "savemodel" / "net.pth"
+CHECKPOINT_PATH = ROOT_DIR / "checkpoints" / "net.pth"
 INPUT_PATH = ROOT_DIR / "quick_test" / "sample_input.png"
 MASK_PATH = ROOT_DIR / "quick_test" / "sample_mask.png"
 OUTPUT_PATH = ROOT_DIR / "quick_test" / "sample_prediction.png"

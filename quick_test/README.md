@@ -1,11 +1,79 @@
 ## Quick Test
 
-To verify the model builds and runs correctly, run:
+A quick test is provided to verify checkpoint loading and inference using one sandstone micro-CT image. The test uses the files included in the `quick_test` folder:
 
-
-```bash
-python test_model.py
+```text
+quick_test/
+├── run_quick_test.py
+├── sample_input.png
+└── sample_mask.png
 ```
 
-This performs a forward pass on a dummy 256×256 input and checks that the
-output shape matches the input. A successful run prints the output shape.
+The script generates a predicted segmentation mask and reports MSE loss, Dice, IoU, Precision, and Recall.
+
+### 1. Install the dependencies
+
+Create and activate a Python environment, then install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+The IAM-UNet implementation uses the Mamba selective-scan operation. Therefore, a CUDA-enabled Linux environment is recommended.
+
+### 2. Download the trained checkpoint
+
+The trained IAM-UNet checkpoint is publicly available on Kaggle:
+
+https://www.kaggle.com/datasets/mdyaminkhan/iam-unet-checkpoints-and-datasets
+
+Download `net.pth` and place it in the following location:
+
+```text
+checkpoints/net.pth
+```
+
+The repository structure should be:
+
+```text
+IAM-UNet/
+├── checkpoints/
+│   └── net.pth
+├── quick_test/
+│   ├── run_quick_test.py
+│   ├── sample_input.png
+│   └── sample_mask.png
+├── matrix.py
+├── net.py
+└── requirements.txt
+```
+
+### 3. Run the quick test
+
+From the root directory of the repository, execute:
+
+```bash
+python quick_test/run_quick_test.py
+```
+
+A successful execution will display output similar to:
+
+```text
+Checkpoint loaded successfully.
+Input shape: (1, 1, 256, 256)
+Output shape: (1, 1, 256, 256)
+MSE Loss: ...
+Dice: ...
+IoU: ...
+Precision: ...
+Recall: ...
+IAM-UNet quick test completed successfully.
+```
+
+The predicted binary mask will be saved as:
+
+```text
+quick_test/sample_prediction.png
+```
+
+The sample input and ground-truth mask are included only for demonstrating the quick-test procedure. The complete dataset is available through the Kaggle link provided above.

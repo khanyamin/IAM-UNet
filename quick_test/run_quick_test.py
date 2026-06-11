@@ -155,10 +155,6 @@ def main():
             "operation may require CUDA."
         )
 
-    # -----------------------------------------------------
-    # Initialize model using the same settings as train.py
-    # -----------------------------------------------------
-
     model = InMambaAttentionUNet(
         in_channels=1,
         num_classes=1,
@@ -167,9 +163,7 @@ def main():
         d_state=16,
     ).to(device)
 
-    # -----------------------------------------------------
-    # Load trained checkpoint
-    # -----------------------------------------------------
+
 
     state_dict = load_checkpoint(
         CHECKPOINT_PATH,
@@ -184,9 +178,6 @@ def main():
     print(f"Checkpoint: {CHECKPOINT_PATH}")
     print("Checkpoint loaded successfully.")
 
-    # -----------------------------------------------------
-    # Load one input image and mask
-    # -----------------------------------------------------
 
     input_tensor = load_grayscale_image(
         INPUT_PATH,
@@ -200,9 +191,6 @@ def main():
         is_mask=True,
     ).to(device)
 
-    # -----------------------------------------------------
-    # Run inference
-    # -----------------------------------------------------
 
     model.eval()
 
@@ -247,9 +235,6 @@ def main():
     predicted_mask = prediction_binary[0, 0]
     true_mask = ground_truth_binary[0, 0]
 
-    # -----------------------------------------------------
-    # Calculate metrics
-    # -----------------------------------------------------
 
     criterion = nn.MSELoss()
     mse_loss = criterion(
@@ -277,10 +262,7 @@ def main():
         true_mask,
     )
 
-    # -----------------------------------------------------
-    # Save predicted mask
-    # Pore = black, matrix = white
-    # -----------------------------------------------------
+
 
     output_image = np.where(
         predicted_mask,
@@ -290,9 +272,6 @@ def main():
 
     Image.fromarray(output_image).save(OUTPUT_PATH)
 
-    # -----------------------------------------------------
-    # Display results
-    # -----------------------------------------------------
 
     print("-" * 60)
     print(f"Input image   : {INPUT_PATH}")

@@ -24,7 +24,7 @@ from matrix import (
 )
 
 
-CHECKPOINT_PATH = ROOT_DIR / "checkpoints" / "net.pth"
+CHECKPOINT_PATH = ROOT_DIR / "checkpoints" / "savemodel_seed_82.pth"
 INPUT_PATH = ROOT_DIR / "quick_test" / "sample_input.png"
 MASK_PATH = ROOT_DIR / "quick_test" / "sample_mask.png"
 OUTPUT_PATH = ROOT_DIR / "quick_test" / "sample_prediction.png"

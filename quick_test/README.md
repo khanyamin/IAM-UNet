@@ -38,7 +38,7 @@ The repository structure should be:
 ```text
 IAM-UNet/
 ├── checkpoints/
-│   └── net.pth
+│   └── savemodel_seed_82.pth
 ├── quick_test/
 │   ├── run_quick_test.py
 │   ├── sample_input.png
@@ -56,19 +56,6 @@ From the root directory of the repository, execute:
 python quick_test/run_quick_test.py
 ```
 
-A successful execution will display output similar to:
-
-```text
-Checkpoint loaded successfully.
-Input shape: (1, 1, 256, 256)
-Output shape: (1, 1, 256, 256)
-MSE Loss: ...
-Dice: ...
-IoU: ...
-Precision: ...
-Recall: ...
-IAM-UNet quick test completed successfully.
-```
 
 The predicted binary mask will be saved as:
 

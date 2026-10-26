@@ -9,7 +9,7 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader, Dataset
 
-from net import InMambaAttentionUNet
+from net import IAMUNet
 from matrix import (
     prepare_binary_mask,
     calculate_dice_coefficient,
@@ -113,7 +113,7 @@ batch_size = 8
 
 trainloader = DataLoader(train_data, batch_size=batch_size, shuffle=True)
 valloader = DataLoader(val_data, batch_size=batch_size, shuffle=False)
-net = InMambaAttentionUNet().to(device)
+net = IAMUNet().to(device)
 optimizer = optim.Adam(net.parameters(), lr=0.0001, betas=(0.5, 0.999))
 mse = nn.MSELoss()
 epochs = 100

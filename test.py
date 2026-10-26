@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, Dataset
 
-from net import InMambaAttentionUNet
+from net import IAMUNet
 from matrix import (
     prepare_binary_mask,
     calculate_dice_coefficient,
@@ -64,7 +64,7 @@ class TestSet(Dataset):
         return len(self.images)
 
 
-G = InMambaAttentionUNet().to(device)
+G = IAMUNet().to(device)
 mod = torch.load(os.path.join(save_dir, "net.pth"), map_location=device)
 G.load_state_dict(mod)
 G.eval()

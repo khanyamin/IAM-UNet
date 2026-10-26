@@ -1,4 +1,5 @@
 <h1 id="IAM-UNet">A Hybrid Deep Learning Framework for Digital Rock Image Segmentation and Petrophysical Characterization</h1>
+'''
 <p align="center">
   <img src="architecture.png" alt="IAM-UNet Architecture" width="85%"/>
 </p>
@@ -11,7 +12,7 @@
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue" alt="Python"/>
   <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License"/>
 </p>
-
+'''
 ---
 
 **IAM-UNet** is a hybrid encoder-decoder segmentation framework that integrates 

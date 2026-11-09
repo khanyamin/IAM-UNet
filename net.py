@@ -421,7 +421,7 @@ class UpBlock(nn.Module):
 # Encoder-Decoder 
 class IAMUNet(nn.Module):
     def __init__(self, in_channels=1, num_classes=1, base_ch=64, drop_path=0.1, d_state=16):
-        super(InMambaAttentionUNet, self).__init__()
+        super(IAMUNet, self).__init__()
 
         # Encoder
         self.enc1 = InceptionMambaBlock(in_channels, base_ch, drop_path=drop_path, d_state=d_state)
